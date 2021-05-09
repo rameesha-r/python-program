@@ -1,7 +1,7 @@
-FROM python:3
+FROM java:8
 
 RUN apt-get update
 
 WORKDIR /app
-COPY helloworld.py /app/helloworld.py
-RUN python helloworld.py
+COPY javasample.java /app/javasample.java
+RUN java javasample.java
