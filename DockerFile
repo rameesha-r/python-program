@@ -5,3 +5,7 @@ RUN apt-get update
 WORKDIR /app
 COPY javasample.java /app/javasample.java
 RUN java javasample.java
+
+EXPOSE 5000
+
+CMD ["java" ,"javasample"]
